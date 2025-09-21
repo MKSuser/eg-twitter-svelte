@@ -13,6 +13,7 @@
 
 <article class="container">
   <h1>Twitter - Svelte</h1>
+
   <form name="form" class="form">
     <div>
       <textarea
@@ -23,6 +24,7 @@
         bind:value={tweet}
       ></textarea>
     </div>
+
     <div>
       <span data-testid="restantes" class="badge {espacioRestanteClass}">
         {restantes}
