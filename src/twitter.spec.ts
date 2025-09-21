@@ -34,6 +34,8 @@ describe('twitter', () => {
 
     const caracteres = screen.getByTestId('restantes')
     expect(+caracteres.innerHTML).to.equal(-10)
+    expect(caracteres.classList.contains('pasado')).toBeTruthy()
+
   })
 
   it('should have a specific class for tweet reaching the limit', async () => {
